@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-son ixtisoslashgan davlat umum ta'lim maktabi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-school" style="color: var(--primary-color);"></i>
+                <h1>1-son Maktab</h1>
+            </div>
+            <nav class="nav" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" data-target="home">Bosh sahifa</a></li>
+                    <li><a href="#about" class="nav-link" data-target="about">Maktab haqida</a></li>
+                    <li><a href="#teachers" class="nav-link" data-target="teachers">O'qituvchilar</a></li>
+                    <li><a href="#students" class="nav-link" data-target="students">O'quvchilar</a></li>
+                    <li><a href="#news" class="nav-link" data-target="news">Yangiliklar</a></li>
+                    <li><a href="#gallery" class="nav-link" data-target="gallery">Galereya</a></li>
+                    <li><a href="#contact" class="nav-link" data-target="contact">Aloqa</a></li>
+                    <li><a href="#admin" class="nav-link admin-btn" data-target="admin"><i class="fas fa-cog"></i></a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <!-- Home Section -->
+        <section id="home" class="page-section active">
+            <div class="hero">
+                <div class="hero-overlay"></div>
+                <!-- Dynamic background in CSS -->
+                <div class="container hero-content">
+                    <h2 class="animate-fade-up">1-son  ixtisoslashgan davlat umum ta'lim maktabiga Xush Kelibsiz!</h2>
+                    <p class="animate-fade-up delay-1">Kelajak - bugungi ta'limdan boshlanadi.</p>
+                    <div class="hero-buttons animate-fade-up delay-2">
+                        <button class="btn btn-primary" onclick="window.location.hash='about'">Batafsil</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container section-padding">
+                <div class="welcome-section">
+                    <div class="welcome-text">
+                        <h3>Direktor Tabrigi</h3>
+                        <p>Hurmatli ota-onalar va aziz o'quvchilar! Bizning maktabimiz sizlarga zamonaviy ta'lim sharoitlarini taqdim etadi. Maqsadimiz – vatanimiz uchun har tomonlama yetuk, komil, raqobatbardosh insonlarni tarbiyalashdir. Yangi o'quv yilida barchangizga zafarlar tilayman!</p>
+                        <p class="signature">- Maktab Direktori</p>
+                    </div>
+                    <div class="welcome-image">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Maktab binosi" class="rounded-img shadow">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container section-padding bg-light rounded-section">
+                <div class="section-header text-center">
+                    <h3 class="section-title">So'nggi Yangiliklar</h3>
+                    <div class="divider"></div>
+                </div>
+                <div class="news-grid" id="home-news">
+                    <!-- Dynamic news here -->
+                </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-outline" onclick="window.location.hash='news'">Barcha yangiliklar</button>
+                </div>
+            </div>
+
+            <div class="quick-links container section-padding">
+                <div class="link-card glassmorphism hover-lift" onclick="window.location.hash='students'">
+                    <div class="icon-wrapper"><i class="fas fa-user-graduate"></i></div>
+                    <h4>O'quvchilar uchun</h4>
+                    <p>Dars jadvali, to'garaklar va yutuqlar</p>
+                </div>
+                <div class="link-card glassmorphism hover-lift" onclick="window.location.hash='contact'">
+                    <div class="icon-wrapper"><i class="fas fa-users"></i></div>
+                    <h4>Ota-onalar uchun</h4>
+                    <p>Murojaatlar va qabul vaqtlari</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="page-section container section-padding">
+            <div class="section-header text-center">
+                <h2 class="section-title">Maktab Haqida</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="about-content grid-2">
+                <div class="about-box card hover-lift">
+                    <h3><i class="fas fa-history text-primary"></i> Tariximiz</h3>
+                    <p>Maktabimiz o'z tarixiga ega bo'lib, shu kungacha minglab iqtidorli yoshlarni qanot qo'yib uchirgan. Bizning ta'lim dargohimizda ko'p yillik tajriba va an'analar mavjud , kompyuter sinflari va boy kutubxona o'quvchilarimiz xizmatida.</p>
+                </div>
+                <div class="about-box card hover-lift">
+                    <h3><i class="fas fa-bullseye text-primary"></i> Missiya va Vizyon</h3>
+                    <p><strong>Missiyamiz:</strong> Har bir o'quvchining ichki salohiyati va qobiliyatini ochish, ularni zamon talablariga mos mutaxassis bo'lib yetishishiga zamin yaratish.</p>
+                    <p><strong>Vizyonimiz:</strong> Hududimizdagi eng namunali, innovatsion va raqamlashtirilgan ta'lim maskaniga aylanish.</p>
+                </div>
+            </div>
+            
+            <h3 class="mt-5 text-center">Ma'muriyat Jamoasi</h3>
+            <div class="admin-team grid-3 mt-3">
+                <div class="team-card text-center hover-lift">
+                    <div class="avatar"><i class="fas fa-user-tie"></i></div>
+                    <h4>Razzaqov M.</h4>
+                    <p class="text-muted">Maktab Direktori</p>
+                </div>
+                <div class="team-card text-center hover-lift">
+                    <div class="avatar"><i class="fas fa-user"></i></div>
+                    <h4>Bobojonova M.</h4>
+                    <p class="text-muted">O'quv ishlari bo'yicha o'rinbosar</p>
+                </div>
+                <div class="team-card text-center hover-lift">
+                    <div class="avatar"><i class="fas fa-user"></i></div>
+                    <h4>Hasanova G.</h4>
+                    <p class="text-muted">Ma'naviyat bo'yicha o'rinbosar</p>
+                </div>
+            </div>
+
+            <div class="stats-container mt-5">
+                <div class="stat-item pulse-hover">
+                    <span class="stat-number">450</span>
+                    <span class="stat-label">O'quvchilar</span>
+                </div>
+                <div class="stat-item pulse-hover">
+                    <span class="stat-number">35</span>
+                    <span class="stat-label">O'qituvchilar</span>
+                </div>
+                <div class="stat-item pulse-hover">
+                    <span class="stat-number">40+</span>
+                    <span class="stat-label">Yillik tajriba</span>
+                </div>
+                <div class="stat-item pulse-hover">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Sifat ko'rsatkichi</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teachers Section -->
+        <section id="teachers" class="page-section container section-padding bg-light rounded-section">
+            <div class="section-header text-center">
+                <h2 class="section-title">O'qituvchilarimiz</h2>
+                <p class="subtitle">Tajribali va malakali ustozlar jamoasi</p>
+                <div class="divider"></div>
+            </div>
+            <div class="teachers-grid grid-4" id="teachers-list">
+                <!-- Teachers loaded dynamically via JS -->
+            </div>
+        </section>
+
+        <!-- Students Section -->
+        <section id="students" class="page-section container section-padding">
+            <div class="section-header text-center">
+                <h2 class="section-title">O'quvchilar Hayoti</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="achievements">Yutuqlar</button>
+                    <button class="tab-btn" data-tab="olympiads">Olimpiada G'oliblari</button>
+                    <button class="tab-btn" data-tab="activities">To'garaklar</button>
+                </div>
+                
+                <div class="tab-content active" id="tab-achievements">
+                    <div class="achievements-list grid-2">
+                        <div class="achievement-card card hover-lift">
+                            <div class="icon-circle gold"><i class="fas fa-medal"></i></div>
+                            <div class="achieve-text">
+                               
+                            </div>
+                        </div>
+                        <div class="achievement-card card hover-lift">
+                            <div class="icon-circle silver"><i class="fas fa-trophy"></i></div>
+                            <div class="achieve-text">
+                                <h4>"Bilimlar Bellashuvi"</h4>
+                                <p>Matematika yo'nalishida 3 nafar o'quvchimiz viloyat bosqichiga yo'llanma oldi.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-card card hover-lift">
+                            <div class="icon-circle bronze"><i class="fas fa-award"></i></div>
+                            <div class="achieve-text">
+                                <h4>"Zakovat" intellektual o'yini</h4>
+                                <p>Tuman bosqichida maktabimiz jamoasi faxrli 3-o'rin sohibi bo'ldi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="tab-olympiads">
+                     <div class="achievements-list grid-2">
+                        <div class="achievement-card card border-left-gold">
+                        
+                        </div>
+                        <div class="achievement-card card border-left-gold">
+                            <h4><i class="fas fa-star text-gold"></i> Samandarova Ziyoda (10-sinf)</h4>
+                            <p>Ingliz tili fani bo'yicha tuman bosqichida 1-o'rin</p>
+                        </div>
+                        <div class="achievement-card card border-left-gold">
+                            <h4><i class="fas fa-star text-gold"></i> Qo'ziboyev Otabek (10-sinf)</h4>
+                            <p>Matematika fani bo'yicha respublika olimpiadasi ishtirokchisi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="tab-activities">
+                    <div class="activities-grid grid-4">
+                        <div class="activity-card text-center card hover-lift">
+                            <i class="fas fa-laptop-code activity-icon"></i>
+                            <h4>IT va Dasturlash</h4>
+                        </div>
+                        <div class="activity-card text-center card hover-lift">
+                            <i class="fas fa-language activity-icon"></i>
+                            <h4>Ingliz tili klubi</h4>
+                        </div>
+                        <div class="activity-card text-center card hover-lift">
+                            <i class="fas fa-chess-knight activity-icon"></i>
+                            <h4>Shaxmat va shashka</h4>
+                        </div>
+                        <div class="activity-card text-center card hover-lift">
+                            <i class="fas fa-table-tennis activity-icon"></i>
+                            <h4>Sport to'garaklari</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="page-section container section-padding bg-light rounded-section">
+             <div class="section-header text-center">
+                <h2 class="section-title">Maktab Yangiliklari</h2>
+                <p class="subtitle">Barcha so'nggi xabarlar va voqealar</p>
+                <div class="divider"></div>
+            </div>
+            <div class="news-list grid-3" id="all-news">
+                <!-- Dynamically loaded via JS -->
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="page-section container section-padding">
+             <div class="section-header text-center">
+                <h2 class="section-title">Galereya</h2>
+                <p class="subtitle">Maktabimiz hayotidan yorqin lahzalar</p>
+                <div class="divider"></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dars jarayoni">
+                    <div class="gallery-overlay"><span>Ochiq dars jarayoni</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tadbir">
+                    <div class="gallery-overlay"><span>Maktab tadbiri</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sport">
+                    <div class="gallery-overlay"><span>Sport musobaqalari</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="O'quvchilar">
+                    <div class="gallery-overlay"><span>Bitiruvchilarimiz</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Kutubxona">
+                    <div class="gallery-overlay"><span>Maktab kutubxonasi</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Laboratoriya">
+                    <div class="gallery-overlay"><span>IT xonasi</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="page-section container section-padding bg-light rounded-section">
+            <div class="section-header text-center">
+                <h2 class="section-title">Biz bilan Aloqa</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-wrapper grid-2">
+                <div class="contact-info card">
+                    <h3 class="mb-4">Bog'lanish uchun ma'lumotlar</h3>
+                    <div class="info-item">
+                        <div class="icon-circle shadow-sm"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Manzil</h4>
+                            <p>Xorazm viloyati, Tuproqqal'a tumani, Pastom</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-circle shadow-sm"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+998 </p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-circle shadow-sm"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Elektron Pochta</h4>
+                            <p>info@1maktab.uz</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container card">
+                    <h3 class="mb-4">Xabar yuborish</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Ismingiz</label>
+                            <input type="text" id="name" class="form-control" required placeholder="To'liq ismingiz">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Elektron pochtangiz</label>
+                            <input type="email" id="email" class="form-control" placeholder="Pochta manzilingiz">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Xabaringiz</label>
+                            <textarea id="message" class="form-control" rows="4" required placeholder="Xabaringizni bu yerga mazing..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Yuborish <i class="fas fa-paper-plane ml-2"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-container card mt-4">
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15655.856003759904!2d69.2401!3d41.2995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1689617267156!5m2!1sen!2s" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- Admin Panel Section -->
+        <section id="admin" class="page-section container section-padding">
+            <div class="section-header text-center">
+                <h2 class="section-title">Admin Panel</h2>
+                <p class="subtitle text-danger"><i class="fas fa-lock"></i> Faqat ma'murlar uchun (Demo)</p>
+                <div class="divider"></div>
+            </div>
+            <div class="admin-panel grid-2">
+                <div class="admin-form card shadow">
+                    <h3>Yangi xabar qo'shish</h3>
+                    <form id="add-news-form">
+                        <div class="form-group">
+                            <label for="news-title">Sarlavha</label>
+                            <input type="text" id="news-title" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="news-date">Sana</label>
+                            <input type="date" id="news-date" class="form-control" required>
+                        </div>
+                         <div class="form-group">
+                            <label for="news-image">Rasm URL (ixtiyoriy)</label>
+                            <input type="text" id="news-image" class="form-control" placeholder="https:// images...">
+                        </div>
+                        <div class="form-group">
+                            <label for="news-content">Matn</label>
+                            <textarea id="news-content" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100"><i class="fas fa-plus-circle"></i> Yangilikni Chop Etish</button>
+                    </form>
+                </div>
+                <div class="admin-preview card bg-light border-dashed">
+                    <h3><i class="fas fa-info-circle"></i> Eslatma</h3>
+                    <p>Ushbu admin panel faqat demo qismi bo'lib, kiritilgan yangiliklar brauzerning LocalStorage xotirasida saqlanadi. Ular <strong>Bosh sahifa</strong> va <strong>Yangiliklar</strong> bo'limida zudlik bilan paydo bo'ladi.</p>
+                    <hr>
+                    <p>Haqiqiy loyihada backend (masalan, PHP, Node.js yoki Python) va ma'lumotlar bazasi (MySQL, PostgreSQL) ulanishi tavsiya etiladi.</p>
+                    
+                    <button id="reset-data" class="btn btn-outline text-danger mt-4"><i class="fas fa-trash"></i> LocalStorage ni tozalash</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content grid-3">
+            <div class="footer-col">
+                <div class="logo mb-3">
+                    <i class="fas fa-school text-white"></i>
+                    <h3 class="text-white m-0">1-son Maktab</h3>
+                </div>
+                <p class="text-light-gray">Kelajagingiz uchun to'g'ri tanlov. Sifatli ta'lim, tarbiya va zamonaviy yondashuv orqali farzandingiz kelajagini birga quramiz.</p>
+            </div>
+            <div class="footer-col">
+                <h3 class="text-white">Tezkor Havolalar</h3>
+                <ul class="footer-links">
+                    <li><a href="#about"><i class="fas fa-chevron-right text-xs"></i> Maktab haqida</a></li>
+                    <li><a href="#teachers"><i class="fas fa-chevron-right text-xs"></i> O'qituvchilar</a></li>
+                    <li><a href="#news"><i class="fas fa-chevron-right text-xs"></i> Yangiliklar</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right text-xs"></i> Aloqa</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 class="text-white">Ijtimoiy Tarmoqlar</h3>
+                <p class="text-light-gray mb-3">Bizning yangiliklarni ijtimoiy tarmoqlar orqali kuzatib boring!</p>
+                <div class="social-links">
+                    <a href="#" class="social-btn"><i class="fab fa-telegram-plane"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 1-son ixtisoslashgan davlat umum ta'lim maktabi. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification System -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- JavaScript Mantiqiy qismi alohida modullarga ajratildi -->
+    <script src="js/data.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/admin.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
